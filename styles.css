@@ -1,101 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-section {
-    margin-bottom: 40px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background: #f5f5f5;
-}
-
-/* ===========================================
-   Team Members Styles (Person A)
-   =========================================== */
-
-
-/* ===========================================
-   Skills Section Styles (Person B)
-   =========================================== */
-
-
-/* ===========================================
-   Projects Section Styles (Person C)
-   =========================================== */
-
-
-/* ===========================================
-   Contact Form Styles (Person D)
-   =========================================== */
 .contact-form {
     max-width: 500px;
     margin: 20px auto 0;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.member-card:hover {
+    transform: translateY(-5px);
 }
 
-.form-group label {
+.member-avatar {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member-card .role {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.member-card .bio {
+    color: #666;
+    font-size: 14px;
+}
+
+/* ===========================================
+   Skills Section Styles (Person B)
+   =========================================== */
+
+.skills-container {
+    margin-top: 20px;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border-color 0.3s;
+.skill-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-.submit-btn {
-    background: #28a745;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-    transition: background 0.3s;
+.skill-progress {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
 }
 
 /* ===========================================
    Projects Section Styles (Person C)
    =========================================== */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -144,6 +113,67 @@ footer {
 
 .project-btn:hover {
     opacity: 0.9;
+}
+
+/* ===========================================
+   Contact Form Styles (Person D)
+   =========================================== */
+
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.submit-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #218838;
+}
+
+.form-status {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .form-status.success {
